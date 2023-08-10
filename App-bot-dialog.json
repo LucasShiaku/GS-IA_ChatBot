@@ -1,0 +1,935 @@
+{
+  "intents": [
+    {
+      "intent": "agradecimentos",
+      "examples": [
+        {
+          "text": "agradecido"
+        },
+        {
+          "text": "grato"
+        },
+        {
+          "text": "muito obrigado"
+        },
+        {
+          "text": "obg"
+        },
+        {
+          "text": "obrigado"
+        },
+        {
+          "text": "ok"
+        },
+        {
+          "text": "tmj"
+        },
+        {
+          "text": "vlw"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "boas-vindas",
+      "examples": [
+        {
+          "text": "como esta"
+        },
+        {
+          "text": "oi"
+        },
+        {
+          "text": "oii"
+        },
+        {
+          "text": "posso te fazer uma pergunta"
+        },
+        {
+          "text": "salve"
+        },
+        {
+          "text": "tudo bem"
+        },
+        {
+          "text": "tudo otimo"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Central",
+      "examples": [
+        {
+          "text": "Contato da empresa"
+        },
+        {
+          "text": "desejo falar com o app"
+        },
+        {
+          "text": "falar com o responsavel"
+        },
+        {
+          "text": "quero falar com a central"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Corrida",
+      "examples": [
+        {
+          "text": "99"
+        },
+        {
+          "text": "corrida"
+        },
+        {
+          "text": "desejo uma corrida"
+        },
+        {
+          "text": "quero que me levem"
+        },
+        {
+          "text": "quero solicitar uma corrida"
+        },
+        {
+          "text": "quero uma corrida"
+        },
+        {
+          "text": "quero um carro"
+        },
+        {
+          "text": "quero um motorista"
+        },
+        {
+          "text": "uber"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Lingua",
+      "examples": [
+        {
+          "text": "idioma"
+        },
+        {
+          "text": "mudar idioma para o"
+        },
+        {
+          "text": "passar linguagem para o"
+        },
+        {
+          "text": "quero mudar o idioma"
+        },
+        {
+          "text": "quero mudar para o"
+        },
+        {
+          "text": "trocar idioma para o"
+        },
+        {
+          "text": "trocar para o"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Menu",
+      "examples": [
+        {
+          "text": "menu"
+        },
+        {
+          "text": "quero ir para o menu principal"
+        },
+        {
+          "text": "retorna"
+        },
+        {
+          "text": "volta"
+        },
+        {
+          "text": "voltar"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Motorista",
+      "examples": [
+        {
+          "text": "celular do motorista"
+        },
+        {
+          "text": "contato do motorista"
+        },
+        {
+          "text": "desejo falar com o motorista"
+        },
+        {
+          "text": "entrar em contato com o motorista"
+        },
+        {
+          "text": "falar com o motorista"
+        },
+        {
+          "text": "quero falar com o motorista"
+        },
+        {
+          "text": "quero o telefone do motorista"
+        },
+        {
+          "text": "telefone do motorista"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Pagamento",
+      "examples": [
+        {
+          "text": "quais sao os meios de pagamento"
+        },
+        {
+          "text": "quero pagar por"
+        },
+        {
+          "text": "sera por"
+        },
+        {
+          "text": "vai ser"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Rotas",
+      "examples": [
+        {
+          "text": "distancia"
+        },
+        {
+          "text": "distancia entre"
+        },
+        {
+          "text": "gostaria de saber a distancia entre"
+        },
+        {
+          "text": "qual a melhor rota entre"
+        },
+        {
+          "text": "queria saber a distancia"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "cidade",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Guarulhos",
+          "synonyms": [
+            "aeroporto",
+            "gru"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Mogi das Cruzes",
+          "synonyms": [
+            "mg",
+            "mogi"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "São Bernado do Campo",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "São Paulo",
+          "synonyms": [
+            "sao paulo",
+            "sp",
+            "terra da garoa"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "São Roque",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "linguagem",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Inglês",
+          "synonyms": [
+            "ingles"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "português",
+          "synonyms": [
+            "port",
+            "portugues"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "pagamentos",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "crédito",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "débito",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "dinheiro",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "pix",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "tranferencia",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sim-nao",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "nao",
+          "synonyms": [
+            "jamais",
+            "n",
+            "não",
+            "negativo",
+            "nem",
+            "nunca"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "sim",
+          "synonyms": [
+            "blz",
+            "claro",
+            "concerteza",
+            "fechou",
+            "por favor",
+            "s",
+            "sim",
+            "ss",
+            "yes"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Bem-vindo",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Bem-Vindo. Me chamo bot Wize e estou a sua disposição, por favor selecione uma opção abaixo. \n\n- Saber a melhor rotas entre as cidades.\n- Pedir uma corrida\n- Opções de pagamentos.\n- Falar com o motorista.\n- Falar com a central.\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "title": "Em outros casos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Eu ainda não estou habilitado para responder isso :( por favor entre em contato com a nossa central, para que tire todas as suas duvidas."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Em outros casos",
+      "previous_sibling": "node_1_1669561967612",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ops... vi que você pediu a corrida por engano ou errada, eu irei redirecionar você para o menu inicial :)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1669559801667",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "Bem-vindo"
+      },
+      "conditions": "@sim-nao:nao",
+      "dialog_node": "node_10_1669560076879",
+      "previous_sibling": "node_5_1669559990828"
+    },
+    {
+      "type": "standard",
+      "parent": "node_8_1669603990123",
+      "conditions": "@cidade:(São Roque) && @cidade:Guarulhos",
+      "dialog_node": "node_10_1669764634269",
+      "previous_sibling": "node_2_1669764498420"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Eu que agradeço, obrigado por utilizar o Wize"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#agradecimentos",
+      "dialog_node": "node_1_1669561967612",
+      "previous_sibling": "node_7_1669559801667"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Pegue a rota que passe por São Paulo, assim você percorrerá 39 Km"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1669603990123",
+      "conditions": "@cidade:(São Bernado do Campo) && @cidade:Guarulhos",
+      "dialog_node": "node_1_1669604525412",
+      "previous_sibling": "node_3_1669604213681"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "A distância entre São Paulo e São Roque são de 15 Km"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1669603990123",
+      "conditions": "@cidade:(São Paulo) && @cidade:(São Roque)",
+      "dialog_node": "node_2_1669689976419",
+      "previous_sibling": "node_8_1669689768656"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Pegue a rota direta entre as cidades, assim você percorrerá 28 Km"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1669603990123",
+      "conditions": "@cidade:(São Bernado do Campo) && @cidade:(Mogi das Cruzes)",
+      "dialog_node": "node_2_1669764498420",
+      "previous_sibling": "node_6_1669763726834"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Pegue a rota direta, assim percorrerá 30 Km"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1669603990123",
+      "conditions": "@cidade:Guarulhos && @cidade:(Mogi das Cruzes)",
+      "dialog_node": "node_3_1669604213681",
+      "previous_sibling": "node_6_1669603999661"
+    },
+    {
+      "type": "standard",
+      "parent": "node_9_1669560470157",
+      "conditions": "#Menu",
+      "dialog_node": "node_3_1669849580716"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "pronto"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1669938898419",
+      "context": {
+        "idioma": "portugues"
+      },
+      "conditions": "@linguagem:português",
+      "dialog_node": "node_3_1669938962678"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Maravilha, por favor digite o seu local atual e seu destino final. Ex:(São Paulo para Guarulhos)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1669559801667",
+      "conditions": "@sim-nao:sim",
+      "dialog_node": "node_5_1669559990828"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Pegue a rota que não passa por nenhuma cidade, assim a distância entre São Roque a Mogi das Cruzes será de 35 Km"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1669603990123",
+      "conditions": "@cidade:(São Roque) && @cidade:(Mogi das Cruzes)",
+      "dialog_node": "node_5_1669607292374",
+      "previous_sibling": "node_1_1669604525412"
+    },
+    {
+      "type": "standard",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_3_1669938962678"
+      },
+      "conditions": "#Lingua && @linguagem",
+      "dialog_node": "node_5_1669944420759",
+      "previous_sibling": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Olhei que você gostaria de entrar em contato com o motorista da sua corrida. Para entrar em contato é por apenas esse número: (11) 91212-1212\n\nDigite \"voltar\" se deseja retornar ao menu principal"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Motorista",
+      "dialog_node": "node_6_1669559522659",
+      "previous_sibling": "node_6_1669604211200"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "A melhor distância são de 30 Km, apenas seguir direto (São Paulo-Guarulhos)."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1669603990123",
+      "conditions": "@cidade:(São Paulo) && @cidade:Guarulhos",
+      "dialog_node": "node_6_1669603999661"
+    },
+    {
+      "type": "standard",
+      "title": "Meios de pagamento",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Os meios de pagamento são: Dinheiro, Débito, Crédito e Pix.\n\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Digite \"voltar\" para retorna ao menu inicial"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Pagamento",
+      "dialog_node": "node_6_1669604211200",
+      "previous_sibling": "node_8_1669603990123"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "A distância entre São Paulo e Mogi das Cruzes são de 16 Km"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1669603990123",
+      "conditions": "@cidade:(São Paulo) && @cidade:(Mogi das Cruzes)",
+      "dialog_node": "node_6_1669690204744",
+      "previous_sibling": "node_2_1669689976419"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Pegue a rota passando por São Paulo para chegar em São Bernardo Do Campo, assim você percorrerá 39Km"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1669603990123",
+      "conditions": "@cidade:(São Roque) && @cidade:(São Bernado do Campo)",
+      "dialog_node": "node_6_1669763726834",
+      "previous_sibling": "node_6_1669690204744"
+    },
+    {
+      "type": "standard",
+      "parent": "node_6_1669604211200",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "Bem-vindo"
+      },
+      "conditions": "#Menu",
+      "dialog_node": "node_6_1669765295155"
+    },
+    {
+      "type": "standard",
+      "parent": "node_6_1669559522659",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "Bem-vindo"
+      },
+      "conditions": "#Menu",
+      "dialog_node": "node_6_1669765692721"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Se deseja voltar ao menu inicial, digite \"voltar\"."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1669559638153",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "Bem-vindo"
+      },
+      "conditions": "#Menu",
+      "dialog_node": "node_6_1669765827241"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Para falar com a central da Wize é pelo número: (11) 2525-2525. Atendemos de Segunda a Sexta das 8:00 as 20:00 hrs."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Central",
+      "dialog_node": "node_7_1669559638153",
+      "previous_sibling": "node_6_1669559522659"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Certo, estamos localizando um motorista na sua área onde o destino seja o mesmo que o seu. Por favor confirme se você realmente pediu uma corrida digitando(sim), se pediu por engano ou errado digite(não)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Corrida",
+      "dialog_node": "node_7_1669559801667",
+      "previous_sibling": "node_7_1669559638153"
+    },
+    {
+      "type": "standard",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_6_1669603999661"
+      },
+      "conditions": "#Rotas",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_8_1669603990123",
+      "previous_sibling": "node_9_1669938898419"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "A distância entre São Paulo e São Bernardo do Campo são de 19 Km"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1669603990123",
+      "conditions": "@cidade:(São Paulo) && @cidade:(São Bernado do Campo)",
+      "dialog_node": "node_8_1669689768656",
+      "previous_sibling": "node_5_1669607292374"
+    },
+    {
+      "type": "standard",
+      "title": "local de embarque e desembarque",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Estamos trabalhando em sua viagem de $local_embarque  $local_de_desembarque"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Muito Obrigado por utilizar o Wize, se deseja voltar para o menu principal, basta digitar \"voltar\""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1669559990828",
+      "context": {
+        "local_embarque": "@cidade.literal",
+        "local_desembarque": "@cidade.literal"
+      },
+      "conditions": "@cidade",
+      "dialog_node": "node_9_1669560470157"
+    },
+    {
+      "type": "standard",
+      "title": "Idiomas",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Para qual idioma?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {},
+      "conditions": "#Lingua",
+      "dialog_node": "node_9_1669938898419",
+      "previous_sibling": "node_5_1669944420759"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "ready"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1669938898419",
+      "context": {
+        "idioma": "ingles"
+      },
+      "conditions": "@linguagem:Inglês",
+      "dialog_node": "node_9_1669939038869",
+      "previous_sibling": "node_3_1669938962678"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "disambiguation": {
+      "prompt": "Você quis dizer:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "Nenhuma das anteriores"
+    },
+    "human_agent_assist": {
+      "prompt": "Você quis dizer:"
+    },
+    "intent_classification": {
+      "training_backend_version": "v2"
+    }
+  },
+  "learning_opt_out": false,
+  "name": "App bot",
+  "language": "pt-br",
+  "description": ""
+}
